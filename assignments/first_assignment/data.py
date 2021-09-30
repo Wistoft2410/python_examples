@@ -3,19 +3,24 @@ lines = []
 
 def read_file(filename):
 	#write your function here.	
-
 	for row in filename:
-		lines.append(row.split('\n'))
-
-	print(lines[0])
+		lines.append(row.strip()) # since 'insert' is used every entry is added on top of 0 and pushed to the bottom. As opposed to 'append' which adds every entry as the last 
 	return lines
-
 
 def parse_csv_lines(lines):
 	#write your function here. It might possibly call other functions you wrote.
+	#jeg skal først kunne loop gennem alle mine strings
+	#dernæst skal jeg kunne splitte hver enkelt string baseret på ";"
+	#dem jeg splitter skal så tilføjes til deres respektive string[][] 
+	#måden jeg splitter hver string 
+	
+	list_of_list = [[]]
 
-	return
-
+	for line in lines:
+		list_of_list.append(line.split(";"))
+	
+	print(list_of_list[2][0])
+	return list_of_list
 
 
 def parse_delimited_lines(lines, delimiter):
