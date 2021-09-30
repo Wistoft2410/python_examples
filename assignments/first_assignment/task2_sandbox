@@ -1,0 +1,7 @@
+list_of_strings = ["Hello; 123; 231","Hej; 654; 866","Davs; 345; 234","Goddag; 534; 765","Møjn!; 657; 456"]
+print(list_of_strings)
+
+strings = []
+
+for row in list_of_strings:
+    strings
